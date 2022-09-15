@@ -6,5 +6,5 @@ export default class P2cAlertComponent extends LightningElement {
     @api cardHeading
     @api number
     @api isValid
-    //ihuyhunijnjknijhbuhgu
+    //Test Comment
 }
