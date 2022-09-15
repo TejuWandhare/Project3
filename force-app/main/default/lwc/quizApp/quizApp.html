@@ -1,0 +1,30 @@
+<template>
+    <lightning-card  title="Quiz App in LWC">
+        <div class="slds-m-around_medium">
+            <form>
+                <template for:each={Quetions} for:item="quiz"> 
+                    <div key= {quiz.id} class="slds-m-bottom_medium">
+                        <div><strong> {quiz.id} - {quiz.Que} </strong></div>
+                        <div class="slds-grid slds-gutters slds-m-bottom_medium">
+                            <div class="slds-col " >
+                                <input type="radio"  name={quiz.id} value="a" onchange={changeHandler}/>
+                                  {quiz.ans.a}
+                            </div>
+                            <div class="slds-col ">
+                                <input type="radio"  name={quiz.id} value="b" onchange={changeHandler}/>
+                                  {quiz.ans.b}
+                            </div>
+                            <div class="slds-col ">
+                                <input type="radio"  name={quiz.id} value="c" onchange={changeHandler}/>
+                                  {quiz.ans.c}
+                            </div>
+                          </div>
+                     </div>
+                  </template>
+                  <lightning-button variant="brand" label="Submit" title="Submit" onclick={submitHandler} disabled={allNotSelected} class="slds-m-left_x-small"></lightning-button>
+                  <lightning-button variant="brand" label="Reset" title="Reset" onclick={resetHandler} class="slds-m-left_x-small"></lightning-button>
+            </form>
+            
+        </div>
+    </lightning-card>
+</template>
