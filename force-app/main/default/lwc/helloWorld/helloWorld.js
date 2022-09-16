@@ -4,7 +4,7 @@ export default class HelloWorld extends LightningElement {
    fullName= "Tejaswini"
 
    
-   title="LWC"  //Two way binding
+   title="Lightning Web Component"  //Two way binding
 
    changeHandler (event) {       //events gets feedback from html to js
     this.title = event.target.value
