@@ -11,7 +11,7 @@ export default class HelloWorld extends LightningElement {
    }
    //@track is used to observe the changes to the properties of an object.
     @track  obj= {
-      name:"Teju",  //passing data from js to html.
+      name:"Teju",  //passing data from js to html...
       city: "Pune",
       postalcode: 23456
   
